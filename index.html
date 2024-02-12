@@ -137,7 +137,7 @@
 						<p style="margin-bottom: 0">To Mr./Mrs./Brother/All of You</p>
 						<p>We Invite You To Attend Our Wedding Event.</p>
 
-						<button class="btn btn-primary" id="open-invitation" onclick="">Open The Invitation</button>
+						<button class="btn btn-primary" id="open-invitation" onclick="playmusic()">Open The Invitation</button>
 					</div>
 				</div>
 			</div>
@@ -286,7 +286,7 @@
                         <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14906.662006213053!2d74.76708938715818!3d20.925773200000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdecf78cceb91c9%3A0x375bf20da9212ad!2sBAPS%20Shri%20Swaminarayan%20Mandir!5e0!3m2!1sen!2sin!4v1706279584957!5m2!1sen!2sin" width="80%" height="300" style="border: 2px solid black; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe></center>
                     </div>
 					<br><br>
-					<center><h3 style="color: #bf9b73;">Contact Number:<a href="tel:9423918865"> 9423918865</a> | <a href="tel:9405628865">9405628865</a> | <a href="tel:9822942259">9822942259</a></h3></center>
+					<center><h3 style="color: #bf9b73;">Contact Number:<a href="tel:9423918865"> 9423918865</a> | <a href="tel:9405628865">9405628865</a></h3></center>
 				</div>
 			</div>
 		</div>
@@ -398,13 +398,12 @@
 
     
 
-    // Ensure audio is playing by default
-    window.addEventListener('DOMContentLoaded', function() {
+    function playmusic(){
       audioPlayer.play().catch(error => {
         // Autoplay was prevented
         console.warn("Autoplay prevented. User gesture required to play audio.");
       });
-    });
+	}
   </script>
 
 <script>
@@ -490,13 +489,6 @@
 					<p>Description of the slide 1</p>
 				</div>`,*/
 			},{
-				src: 'images/gallery/img4.jpg',
-				thumb: 'images/gallery/img4.jpg',
-				/*subHtml: `<div class="lightGallery-captions">
-					<h4>Caption 1</h4>
-					<p>Description of the slide 1</p>
-				</div>`,*/
-			},{
 				src: 'images/gallery/img5.jpg',
 				thumb: 'images/gallery/img5.jpg',
 				/*subHtml: `<div class="lightGallery-captions">
@@ -504,22 +496,8 @@
 					<p>Description of the slide 1</p>
 				</div>`,*/
 			},{
-				src: 'images/gallery/img6.jpg',
-				thumb: 'images/gallery/img6.jpg',
-				/*subHtml: `<div class="lightGallery-captions">
-					<h4>Caption 1</h4>
-					<p>Description of the slide 1</p>
-				</div>`,*/
-			},{
 				src: 'images/gallery/img7.jpg',
 				thumb: 'images/gallery/img7.jpg',
-				/*subHtml: `<div class="lightGallery-captions">
-					<h4>Caption 1</h4>
-					<p>Description of the slide 1</p>
-				</div>`,*/
-			},{
-				src: 'images/gallery/img17.jpg',
-				thumb: 'images/gallery/img17.jpg',
 				/*subHtml: `<div class="lightGallery-captions">
 					<h4>Caption 1</h4>
 					<p>Description of the slide 1</p>
@@ -533,56 +511,8 @@
 				</div>`,*/
 			},
 			{
-				src: 'images/gallery/img18.jpg',
-				thumb: 'images/gallery/img18.jpg',
-				/*subHtml: `<div class="lightGallery-captions">
-					<h4>Caption 1</h4>
-					<p>Description of the slide 1</p>
-				</div>`,*/
-			},
-			{
-				src: 'images/gallery/img15.jpg',
-				thumb: 'images/gallery/img15.jpg',
-				/*subHtml: `<div class="lightGallery-captions">
-					<h4>Caption 1</h4>
-					<p>Description of the slide 1</p>
-				</div>`,*/
-			},
-			{
-				src: 'images/gallery/img12.jpg',
-				thumb: 'images/gallery/img12.jpg',
-				/*subHtml: `<div class="lightGallery-captions">
-					<h4>Caption 1</h4>
-					<p>Description of the slide 1</p>
-				</div>`,*/
-			},
-			{
-				src: 'images/gallery/img13.jpg',
-				thumb: 'images/gallery/img13.jpg',
-				/*subHtml: `<div class="lightGallery-captions">
-					<h4>Caption 1</h4>
-					<p>Description of the slide 1</p>
-				</div>`,*/
-			},
-			{
-				src: 'images/gallery/img14.jpg',
-				thumb: 'images/gallery/img14.jpg',
-				/*subHtml: `<div class="lightGallery-captions">
-					<h4>Caption 1</h4>
-					<p>Description of the slide 1</p>
-				</div>`,*/
-			},
-			{
-				src: 'images/gallery/img15.jpg',
-				thumb: 'images/gallery/img15.jpg',
-				/*subHtml: `<div class="lightGallery-captions">
-					<h4>Caption 1</h4>
-					<p>Description of the slide 1</p>
-				</div>`,*/
-			},
-			{
-				src: 'images/gallery/img16.jpg',
-				thumb: 'images/gallery/img16.jpg',
+				src: 'images/gallery/img8.jpg',
+				thumb: 'images/gallery/img8.jpg',
 				/*subHtml: `<div class="lightGallery-captions">
 					<h4>Caption 1</h4>
 					<p>Description of the slide 1</p>
@@ -590,7 +520,7 @@
 			},
 			{
 				src: 'images/gallery/img9.jpg',
-				thumb: 'images/gallery/img9.jpg',
+				thumb: 'images/gallery/im9.jpg',
 				/*subHtml: `<div class="lightGallery-captions">
 					<h4>Caption 1</h4>
 					<p>Description of the slide 1</p>
@@ -598,7 +528,7 @@
 			},
 			{
 				src: 'images/gallery/img10.jpg',
-				thumb: 'images/gallery/img10.jpg',
+				thumb: 'images/gallery/im10.jpg',
 				/*subHtml: `<div class="lightGallery-captions">
 					<h4>Caption 1</h4>
 					<p>Description of the slide 1</p>
@@ -606,13 +536,36 @@
 			},
 			{
 				src: 'images/gallery/img11.jpg',
-				thumb: 'images/gallery/img11.jpg',
+				thumb: 'images/gallery/im11.jpg',
 				/*subHtml: `<div class="lightGallery-captions">
 					<h4>Caption 1</h4>
 					<p>Description of the slide 1</p>
 				</div>`,*/
 			},
-
+			{
+				src: 'images/gallery/img12.jpg',
+				thumb: 'images/gallery/im12.jpg',
+				/*subHtml: `<div class="lightGallery-captions">
+					<h4>Caption 1</h4>
+					<p>Description of the slide 1</p>
+				</div>`,*/
+			},
+			{
+				src: 'images/gallery/img13.jpg',
+				thumb: 'images/gallery/im13.jpg',
+				/*subHtml: `<div class="lightGallery-captions">
+					<h4>Caption 1</h4>
+					<p>Description of the slide 1</p>
+				</div>`,*/
+			},
+			{
+				src: 'images/gallery/img14.jpg',
+				thumb: 'images/gallery/im14.jpg',
+				/*subHtml: `<div class="lightGallery-captions">
+					<h4>Caption 1</h4>
+					<p>Description of the slide 1</p>
+				</div>`,*/
+			},
 		],
 	});
 
